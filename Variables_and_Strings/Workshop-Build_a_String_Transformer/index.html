@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Output</title>
+</head>
+<body>
+  <h1>String Transformer Output</h1>
+  <pre id="output"></pre>
+
+  <script>
+    // 1. Override console.log BEFORE script.js is loaded
+    const outputEl = document.getElementById("output");
+    const originalLog = console.log;
+    
+    console.log = function(...args) {
+      originalLog.apply(console, args); // still show in the real console
+      outputEl.textContent += args.join(" ") + "\n"; // show on the page
+    };
+  </script>
+
+  <!-- 2. Only then load script.js here -->
+  <script src="script.js"></script>
+</body>
+</html>
