@@ -33,23 +33,23 @@ console.log("Answers:")
 let counter2 = 10;
 console.log(`Counter is currently ${counter2}`);
 
-let updatedCounter2 = ++counter;
+let updatedCounter2 = ++counter2;
 console.log(`Counter is now ${updatedCounter2}`);
 
 let score2 = 8;
 console.log(`Score is currently ${score2}`);
 
-let finalScore2 = score++;
+let finalScore2 = score2++;
 console.log(`Score is still ${finalScore2}`);
 
 let coins2 = 3;
 console.log(`Coins is currently ${coins2}`);
 
-let updatedCoins2 = --coins;
+let updatedCoins2 = --coins2;
 console.log(`Coins is now ${updatedCoins2}`);
 
 let health2 = 7;
 console.log(`Health is currently ${health2}`);
 2
-let newHealth2 = health--;
+let newHealth2 = health2--;
 console.log(`Health is still ${newHealth2}`);
